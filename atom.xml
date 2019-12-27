@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://vitokid.github.io/</id>
     <title>vito</title>
-    <updated>2019-12-27T02:48:11.120Z</updated>
+    <updated>2019-12-27T02:50:05.005Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://vitokid.github.io/"/>
     <link rel="self" href="https://vitokid.github.io//atom.xml"/>
@@ -11,7 +11,7 @@
     <icon>https://vitokid.github.io//favicon.ico</icon>
     <rights>All rights reserved 2019, vito</rights>
     <entry>
-        <title type="html"><![CDATA[标题一]]></title>
+        <title type="html"><![CDATA[nacy]]></title>
         <id>https://vitokid.github.io//post/biao-ti-2</id>
         <link href="https://vitokid.github.io//post/biao-ti-2">
         </link>
