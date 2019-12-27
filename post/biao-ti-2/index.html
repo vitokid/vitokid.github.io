@@ -9,7 +9,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://vitokid.github.io//favicon.ico?v=1577431843016">
+<link rel="shortcut icon" href="https://vitokid.github.io//favicon.ico?v=1577434317366">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="https://vitokid.github.io//styles/main.css">
 
@@ -30,7 +30,7 @@
   <div class="top-container" data-aos="fade-right">
     <div class="top-header-container">
       <a class="site-title-container" href="https://vitokid.github.io/">
-        <img src="https://vitokid.github.io//images/avatar.png?v=1577431843016" class="site-logo">
+        <img src="https://vitokid.github.io//images/avatar.png?v=1577434317366" class="site-logo">
         <h1 class="site-title">vito</h1>
       </a>
       <div class="menu-btn" @click="menuVisible = !menuVisible">
@@ -97,17 +97,10 @@
             
             <div class="post-content">
               <!-- more -->
-<p>static class Node&lt;K,V&gt; implements Map.Entry&lt;K,V&gt; {<br>
-final int hash;<br>
-final K key;<br>
-V value;<br>
-Node&lt;K,V&gt; next;</p>
-<pre><code>    Node(int hash, K key, V value, Node&lt;K,V&gt; next) {
-        this.hash = hash;
-        this.key = key;
-        this.value = value;
-        this.next = next;
-    }</code></pre>
+<pre><code>static final int hash(Object key) {
+    int h;
+    return (key == null) ? 0 : (h = key.hashCode()) ^ (h &gt;&gt;&gt; 16);
+}</code></pre>
 
             </div>
             
