@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://vitokid.github.io/</id>
     <title>vito kid</title>
-    <updated>2019-12-27T02:22:05.645Z</updated>
+    <updated>2019-12-27T02:29:24.557Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://vitokid.github.io/"/>
     <link rel="self" href="https://vitokid.github.io//atom.xml"/>
@@ -10,6 +10,15 @@
     <logo>https://vitokid.github.io//images/avatar.png</logo>
     <icon>https://vitokid.github.io//favicon.ico</icon>
     <rights>All rights reserved 2019, vito kid</rights>
+    <entry>
+        <title type="html"><![CDATA[标题2]]></title>
+        <id>https://vitokid.github.io//post/biao-ti-2</id>
+        <link href="https://vitokid.github.io//post/biao-ti-2">
+        </link>
+        <updated>2019-12-27T02:28:53.000Z</updated>
+        <content type="html"><![CDATA[<p>阿斯顿发斯蒂芬</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Hello Gridea]]></title>
         <id>https://vitokid.github.io//post/hello-gridea</id>
