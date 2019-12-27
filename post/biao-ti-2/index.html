@@ -3,13 +3,13 @@
   <head>
     <meta charset="utf-8" >
 
-<title>nacy | vito</title>
+<title>HashMap | vito</title>
 <meta name="description" content="三杯两盏淡酒">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://vitokid.github.io//favicon.ico?v=1577434317366">
+<link rel="shortcut icon" href="https://vitokid.github.io//favicon.ico?v=1577434463383">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="https://vitokid.github.io//styles/main.css">
 
@@ -30,7 +30,7 @@
   <div class="top-container" data-aos="fade-right">
     <div class="top-header-container">
       <a class="site-title-container" href="https://vitokid.github.io/">
-        <img src="https://vitokid.github.io//images/avatar.png?v=1577434317366" class="site-logo">
+        <img src="https://vitokid.github.io//images/avatar.png?v=1577434463383" class="site-logo">
         <h1 class="site-title">vito</h1>
       </a>
       <div class="menu-btn" @click="menuVisible = !menuVisible">
@@ -92,14 +92,31 @@
       <div class="main-container">
         <div class="content-container" data-aos="fade-up">
           <div class="post-detail">
-            <h2 class="post-title">nacy</h2>
+            <h2 class="post-title">HashMap</h2>
             <div class="post-date">2019-12-27</div>
             
             <div class="post-content">
-              <!-- more -->
+              <p>hash值计算</p>
+<!-- more -->
 <pre><code>static final int hash(Object key) {
     int h;
     return (key == null) ? 0 : (h = key.hashCode()) ^ (h &gt;&gt;&gt; 16);
+}
+</code></pre>
+<p>Node存储内容</p>
+<!-- more -->
+<pre><code>static class Node&lt;K,V&gt; implements Map.Entry&lt;K,V&gt; {
+    final int hash;
+    final K key;
+    V value;
+    Node&lt;K,V&gt; next;
+
+    Node(int hash, K key, V value, Node&lt;K,V&gt; next) {
+        this.hash = hash;
+        this.key = key;
+        this.value = value;
+        this.next = next;
+    }
 }</code></pre>
 
             </div>
